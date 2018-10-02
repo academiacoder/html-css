@@ -4,21 +4,22 @@
 
 1. [Sintaxis](#id1)
 2. [Estructura básica](#id2)
-  1. [DOCTYPE](#id21)
-  2. [html](#id22)
-  3. [head](#id23)
-  4. [body](#id24)
-  5. [Estructura más completa](#id25)
+    1. [DOCTYPE](#id21)
+    2. [html](#id22)
+    3. [head](#id23)
+    4. [body](#id24)
+    5. [Estructura más completa](#id25)
 3. [Elementos](#id3)
-  1. [Comparación HTML4 y HTML5](#id31)
-  2.  [Imágenes de comparación](#id32)
+    1. [Comparación HTML4 y HTML5](#id31)
+    2.  [Imágenes de comparación](#id32)
 
 ------------
 
 <div id="id1"></div>
 
 ## 1. Sintaxis
-La sintaxis de HTML está explicada en el video de la clase Nro. 2 del curso
+La sintaxis de HTML está explicada en el video de la clase Nro. 2 del curso al que pueden acceder hacienod click en la siguiente imágen
+
 [![Sintaxis de HTML](http://img.youtube.com/vi/e630-l5DQW4/0.jpg)](http://www.youtube.com/watch?v=e630-l5DQW4 "Sintaxis de HTML")
 
 
