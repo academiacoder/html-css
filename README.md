@@ -54,7 +54,7 @@ Cómo dijimos en la clase de sintaxis el DOCTYPE es solo para indicar que tipo d
 <div id="id22"></div>
 
 ### 2.2 - html
-Esta etiqueta englobará todo el contenido de nuestro HTML y es la que contiene las etiquetas `<head>` y `<body>`
+Esta etiqueta englobará todo el contenido de nuestro HTML y es la que contiene las etiquetas `<head></head>` y `<body></body>`
 
 La etiqueta HTML por ejemplo puede tener el atributo `lang` para indicar el lenguaje en que está escrito el documento por ejemplo
 `<html lang="es">`
