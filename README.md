@@ -145,3 +145,37 @@ En el ejemplo anterior ahora en HTML5 tendríamos esto
 ![HTML 5](https://tutorial.techaltum.com/images/html5.jpg "Estructura HTML5")
 
 
+
+## 4. Elementos de texto
+
+Aprenderemos sobre los elementos para desplegar texto en nuestras páginas. Podemos desplegar texto escribiendo directamente en nuestro HTML, pero esto no está recomendado ya que debemos especificar dentro de etiquetas que tipo de texto es, para brindarle semantica a nuestro archivo.
+
+### 4.1 Elementos de enfasis
+
+Por ejemplo para hacer un texto cursiva o negrita tenemos 2 métodos.
+* Negrita - `<b></b>` o `<strong></strong>`
+* Cursiva - `<i></i>`o `<em></em>`
+
+En este caso justamente b e i no aportan semantica, pero strong y em si, em le da enfasis al texto y strong le da aún más énfasis al mismo.
+
+### 4.2 Elementos de encabezado
+
+Aquí tenemos 6 etiquetas que se forman de la misma manera con la letra h y el número correspondiente a su importancia (jerarquía) del 1 al 6 justamente.
+
+```html
+<h1></h1>
+<h2></h2>
+<h3></h3>
+<h4></h4>
+<h5></h5>
+<h6></h6>
+```
+**IMPORTANTE:** No se recomienda utilizar más de un h1 por página ya que este es el elementó de texto más importante de cada página, si utilizamos más de 1 estamos afectando la jerarquía y esto afecta por ejemplo al SEO (posicionamiento de tu página)
+
+Cuando vean los elementos de encabezado en el navegador verán que estos le asignan un tamaño específico a cada uno de más grande a más pequeño según su importancia, pero esto no es lo importante, de hecho luego con CSS lo cambiaremos, lo que nos importa es su semantica, es decir la importancia que cada uno conlleva en una página.
+
+**Nota:** en el ejemplo que se ve en el video les muestro como puedo cambiar el tamaño de un H2 para que sea más grande que un H1 pero esto no significa que un H2 sea más importante semanticamente que un H1.
+
+### Elemento Párrafo
+
+El elemento "p" representa un párrafo de texto.
