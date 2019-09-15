@@ -5,21 +5,24 @@
 - [Curso de HTML y CSS desde Cero](#curso-de-html-y-css-desde-cero)
   - [Indice](#indice)
   - [1. Sintaxis](#1-sintaxis)
-  - [2. Estructura básica](#2-estructura-básica)
+  - [2. Estructura básica](#2-estructura-b%c3%a1sica)
     - [2.1 DOCTYPE](#21-doctype)
     - [2.2 html](#22-html)
     - [2.3 head](#23-head)
     - [2.4 body](#24-body)
-    - [2.5 Estructura más completa](#25-estructura-más-completa)
+    - [2.5 Estructura más completa](#25-estructura-m%c3%a1s-completa)
   - [3. Elementos](#3-elementos)
-    - [3.1 Comparación HTML4 y HTML5](#31-comparación-html4-y-html5)
-    - [3.2 Imágenes de comparación](#32-imágenes-de-comparación)
+    - [3.1 Comparación HTML4 y HTML5](#31-comparaci%c3%b3n-html4-y-html5)
+    - [3.2 Imágenes de comparación](#32-im%c3%a1genes-de-comparaci%c3%b3n)
       - [ESTRUCTURA HTML4](#estructura-html4)
       - [ESTRUCTURA HTML5](#estructura-html5)
   - [4. Elementos de texto](#4-elementos-de-texto)
     - [4.1 Elementos de enfasis](#41-elementos-de-enfasis)
     - [4.2 Elementos de encabezado](#42-elementos-de-encabezado)
-    - [4.3 Elemento Párrafo](#43-elemento-párrafo)
+    - [4.3 Elemento Párrafo](#43-elemento-p%c3%a1rrafo)
+  - [5. Enlaces](#5-enlaces)
+    - [5.1 Atributos de enlaces](#51-atributos-de-enlaces)
+    - [5.2 Ejemplos de enlaces](#52-ejemplos-de-enlaces)
 
 ---
 
@@ -27,7 +30,7 @@
 
 La sintaxis de HTML está explicada en el video de la clase Nro. 2 del curso al que pueden acceder hacienod click en la siguiente imágen
 
-[![Sintaxis de HTML](http://img.youtube.com/vi/e630-l5DQW4/0.jpg)](http://www.youtube.com/watch?v=e630-l5DQW4 "Sintaxis de HTML")
+[![Sintaxis de HTML](http://img.youtube.com/vi/vV3j9MtYYnw/0.jpg)](https://www.youtube.com/watch?v=vV3j9MtYYnw "Sintaxis de HTML")
 
 ## 2. Estructura básica
 
@@ -176,4 +179,51 @@ El elemento "p" representa un párrafo de texto.
 
 ```html
 <p>Texto del párrafo a mostrar en pantalla.</p>
+```
+
+## 5. Enlaces
+
+Dentro de las páginas web podemos insertar enlaces, también son conocidos como links o vínculos, los enlaces nos permiten navegar de una página a otra dentro de la misma, o de una página a otra externa, descargar archivos, ejecutar una aplicación para enviar un mail, etc...
+
+La etiqueta para declarar un en lace es "a" por Anchor dicha etiqueta se utiliza con la siguiente estructura básica.
+
+```html
+<a href="https://youtube.com">Enlace a YouTube</a>
+```
+
+El contenido de href es lo importante, ya que define el funcionamiento del enlace, indica que va a hacer, en este caso es dirigirnos a la página youtube.com, y el contenido de la etiqueta a en nuestro caso "Enlace a YouTube" es el texto que se mostrará en la página web.
+
+"a" es una etiqueta inline, es decir se muestra en linea en el bloque que se está utilizando.
+
+> Es importante aclarar que no se recomienda utilizar elementos de comportamiento en bloque, dentro de elementos en linea, por tanto si por ejemplo queremos utilizar un enlace en un encabezado, tenemos que declarar el encabezado con el h correspondiente, y dentro de h usar la etiqueta a, de la siguietne forma:
+>
+> `<h1><a href="link.html">Texto Encabezado</a></h1>`
+
+### 5.1 Atributos de enlaces
+
+Los enlaces poseen diferentes atributos en el siguiente enlace pueden ver todos, aquí utilizaremos solo href ya explicado y target. Los demás atributos reitero pueden verlos [**Aquí - MDN Enlaces**](https://developer.mozilla.org/es/docs/Web/HTML/Elemento/a) son muy simples y poco utilizados.
+
+- href: indica el destino del enlace, puede ser como ya indicamos una página web, un archivo, un mail, un teléfono etc...
+  - Enlaces a páginas web: dentro del href indicamos la dirección de la web a enlazar.
+  - Enlaces a sectores de una misma página: Si tenemos identificadas etiquetas con el atributo id, podemos indicarle al navegador que se dirija a ese sector del documento utilizando dentro de href el simbolo numeral y el id que hayamos asignado a la etiqueta a enlazar.
+  - Enlaces a emails: Esto nos permite automáticamenta abrir la aplicación de correo predeterminada en nuestra computadora con todo listo para enviar un mail a la dirección que nosotros indicamos.
+  
+- target: Le indica al navegador donde abrir la página que hemos enlazado, en target por ejemplo tenemos **self** que le dice al navegador que abra el enlace en la misma pestaña o ventana en la que estamos actualmente, **_blank** indica que se abra el enlace en una pestaña nueva, también tenemos **_parent** y **_top** los cuales también son poco utilizados pero también pueden ver más información en el enlace a MDN.
+
+- download: Si lo que queremos es descargar un archivo, lo que debemos hacer es dentro del atributo href poner la dirección a dicho archivo, y además asignarle el atributo download a la etiqueta "a".
+
+### 5.2 Ejemplos de enlaces
+
+```html
+Enlace a una web
+<a href="https://youtube.com">Ir a YouTube</a>
+
+Enlace a un sector del documento, especificamente al elemento con el id="ejemplo"
+<a href="#ejemplo">Ir al elemento ejemplo</a>
+
+Enlace para enviar un mail
+<a href="mailto:marcosguerrinicursos@gmail.com">Envia un mail</a>
+
+Enlace para descargar
+<a href="https://enlace.al/archivo.pdf" download>Descarga el archivo.pdf</a>
 ```
