@@ -23,6 +23,10 @@
   - [5. Enlaces](#5-enlaces)
     - [5.1 Atributos de enlaces](#51-atributos-de-enlaces)
     - [5.2 Ejemplos de enlaces](#52-ejemplos-de-enlaces)
+  - [6. Listas](#6-listas)
+    - [6.1 Listas Desordenadas **\<ul>**](#61-listas-desordenadas-ul)
+    - [6.2 Listas Ordenadas **\<ol>**](#62-listas-ordenadas-ol)
+    - [6.3 Listas Descriptivas **\<dl>**](#63-listas-descriptivas-dl)
 
 ---
 
@@ -227,3 +231,37 @@ Enlace para enviar un mail
 Enlace para descargar
 <a href="https://enlace.al/archivo.pdf" download>Descarga el archivo.pdf</a>
 ```
+
+## 6. Listas
+
+### 6.1 Listas Desordenadas **\<ul>**
+
+>Enlace a MDN
+><https://developer.mozilla.org/es/docs/Web/HTML/Elemento/ul>
+
+Las listas desordenadas nos permiten mostrar una serie de elementos agrupados en una caja tipo bloque, pero que no tienen ningún orden jerárquico o numérico.
+
+Se representan pro el elemento estructural
+**\<ul>** y los elementos de la lista por el elemento **\<li>**.
+
+Estas listas son las que más encontarás utiizadas en la red, y seguramente sean las que más utilices.
+
+### 6.2 Listas Ordenadas **\<ol>**
+
+>Enlace a MDN
+><https://developer.mozilla.org/es/docs/Web/HTML/Elemento/ol>
+
+Las listas ordenadas nos permiten mostrar una serie de elementos agrupados en una caja tipo bloque, pero a diferencia de las desordenadas, estas por defecto incluyen un orden, numérico, alfanumérico, etc...
+
+Se representan pro el elemento estructural
+**\<ol>** y los elementos de la lista por el elemento **\<li>**.
+
+### 6.3 Listas Descriptivas **\<dl>**
+
+>Enlace a MDN
+><https://developer.mozilla.org/es/docs/Web/HTML/Elemento/dl>
+
+Las listas descriptivas nos permiten mostrar una lista de elementos que incluyen un termino específico con su correspondiente descripción o descripciones.
+
+Se representan pro el elemento estructural
+**\<dl>**, los terminos a describir por el elemento **\<dt>**, y las descripciones de los terminos por el elemento **\<dd>**.
