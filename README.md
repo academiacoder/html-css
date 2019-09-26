@@ -27,6 +27,13 @@
     - [6.1 Listas Desordenadas **\<ul>**](#61-listas-desordenadas-ul)
     - [6.2 Listas Ordenadas **\<ol>**](#62-listas-ordenadas-ol)
     - [6.3 Listas Descriptivas **\<dl>**](#63-listas-descriptivas-dl)
+    - [6.4 Listas Anidadas](#64-listas-anidadas)
+  - [7. Media](#7-media)
+    - [7.1 Imágenes](#71-im%c3%a1genes)
+    - [7.2 Audio](#72-audio)
+    - [7.3 Video](#73-video)
+    - [7.4 Figure y Figcaption](#74-figure-y-figcaption)
+    - [7.5 iframe (Inline Frame)](#75-iframe-inline-frame)
 
 ---
 
@@ -265,3 +272,94 @@ Las listas descriptivas nos permiten mostrar una lista de elementos que incluyen
 
 Se representan pro el elemento estructural
 **\<dl>**, los terminos a describir por el elemento **\<dt>**, y las descripciones de los terminos por el elemento **\<dd>**.
+
+### 6.4 Listas Anidadas
+
+Dentro de una lista podemos introducir otra lista de cualquiera de los tipos que hemos visto. Esto da como resultado listas anidadas, es decir podemos incluir dentro de una lista no ordenada, por ejemplo con cursos de lenguajes de programación una lista ordenada con las clases de dicho curso.
+
+```html
+<ul>
+  <li>Python</li>
+  <ol>
+    <li>Introducción</li>
+    <li>Herramientas</li>
+  </ol>
+  <li>JavaScript</li>
+  <ol>
+    <li>Introducción</li>
+    <li>Herramientas</li>
+  </ol>
+</ul>
+```
+
+## 7. Media
+
+HTML5 nos provee etiquetas propias para desplegar diferentes tipos de elementos multimedia, imágenes, videos, audio, etc... En esta sección veremos como tratar a cada uno de ellos.
+
+### 7.1 Imágenes
+
+> Enlace a MDN:
+> <https://developer.mozilla.org/es/docs/Web/HTML/Elemento/img>
+
+Para las imágenes disponemos de la etiqueta **\<img />** etiqueta que no dispone de una etiqueta de cierre pero si permite la utilización de distintos atributos.
+
+- **src**: indica la ruta donde se encuentra la imágen.
+- **alt**: indica un texto que se mostrará si la imágen no es correctamente cargada.
+- **width**: establece el ancho de la imágen
+- **height**: establece el alto de la imágen
+
+> Es importante aclarar que el elemento **img** debe ser utilizado cuando la imágen tiene un valor semántico dentro del contenido de la página, cuando esta imágen solo es parte del diseño se recomienda añadirla con CSS, cosa que aprenderemos en el curso de CSS.
+
+### 7.2 Audio
+
+> Enlace a MDN
+> <https://developer.mozilla.org/es/docs/Web/HTML/Elemento/audio>
+
+A diferencia de la etiqueta IMG la etiqueta para desplegar audio dispone de una etiqueta de cierre, por tanto la mostraremos de la siguiente manera **\<audio>\</audio>**
+
+Y algunos atributos que utilizaremos son los siguientes.
+
+- **src**: Indica la ruta donde se encuentra el archivo.
+- **controls**: Muestra los controles para utilizar el audio.
+- **autoplay**: Inicia automáticamente el audio.
+- **loop**: Hace que el audio se reproduzca nuevamente de manera automática hasta que nosotros lo detengamos manualmente.
+- **preload**: Esto nos permite que el audio cargue o no automáticamente cuando la página carga. Debemos asignarle los valores auto, none, metadata.
+
+> En navegadores más antiguos había que identificar diferentes tipos de formato de audio para que el navegador identifique el que puede utilizar y descarte el resto. No entraremos en estos detalles en este curso.
+
+### 7.3 Video
+
+> Enlace a MDN
+> <https://developer.mozilla.org/es/docs/Web/HTML/Elemento/video>
+
+Video se comporta prácticamente igual que la etiqueta de Audio, tiene una etiqueta de apertura y otra de cierre **\<video>\</video>** y algunos atributos extra que podemos utilizar.
+
+- **src**: Indica la ruta donde se encuentra el archivo.
+- **controls**: Muestra los controles para utilizar el video.
+- **autoplay**: Inicia automáticamente el video.
+- **loop**: Hace que el video se reproduzca nuevamente de manera automática hasta que nosotros lo detengamos manualmente.
+- **preload**: Esto nos permite que el video cargue o no automáticamente cuando la página carga. Debemos asignarle los valores auto, none, metadata.
+- **poster**: Esto permitirá mostrar una imágen en mientra el video no ha sido reproducido.
+
+### 7.4 Figure y Figcaption
+
+> Enlace a MDN
+> <https://developer.mozilla.org/es/docs/Web/HTML/Elemento/figure>
+> 
+> <https://developer.mozilla.org/es/docs/Web/HTML/Elemento/figcaption>
+
+El elemento HTML `<figure>` representa contenido independiente, a menudo con un título. Si bien se relaciona con el flujo principal, su posición es independiente de éste. Por lo general, se trata de una imagen, una ilustración, un diagrama, un fragmento de código, o un esquema al que se hace referencia en el texto principal, pero que se puede mover dentro del sitio sin afectar al contenido base de la página que se está viendo.
+
+Muchas veces ese contenido puede llevar un título o una leyenda el cual le otorgaremos con la etiqueta `<figcaption>`.
+
+Ambas etiquetas cuentan con una etiqueta de cierre.
+`<figure></figure> y <figcaption></figcaption>`
+
+### 7.5 iframe (Inline Frame)
+
+> Enlace a MDN
+> <https://developer.mozilla.org/es/docs/Web/HTML/Elemento/iframe>
+
+El elemento Inline Frame `<iframe>` nos permite incrustrar una página HTML dentro de otra.
+
+Así mismo de esta forma podemos incrustrar videos, mapas, audios, etc... que otros sitios como por ejemplo YouTube tienen haciendo uso de sus herramientas como controles, pantallas finales, etc...
